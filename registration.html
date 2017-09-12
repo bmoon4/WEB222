@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Lovely PETs!</title>
+        <meta charset="UTF-8">
+        <link type = "text/css" rel="stylesheet" href="css/a4-main.css" />
+        <script src="js/a4-main.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="center">
+                <h1 class="app-title">
+                    Purfect Lovely Pets
+                </h1>
+            </div>
+        </header>
+        <nav>
+            <div class="center">
+                <ul>
+                    <li><a href="registration.html">Register &nbsp&nbsp&nbsp&nbsp</a></li>
+                    <li><span>|</span></li>
+                    <li><a href ="main.html" onclick="filterAllPets()">All Pets</a></li>
+                    <li><span>|</span></li>
+                    <li><a href ="main.html" onclick="filterDog()">Dogs</a></li>
+                    <li><a href ="main.html" onclick="filterCat()">Cats</a></li>
+                    <li><a href ="main.html" onclick="filterBird()">Birds</a></li>
+                    <li><span>|</span></li>
+                    <li><a href ="main.html" onclick="filter_0_to_1()">&lt; 1 year</a></li>
+                    <li><a href ="main.html" onclick="filter_1_to_3()">1 - 3 years</a></li>
+                    <li><a href ="main.html" onclick="filter_4_plus()">4+ years</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="main center">
+                <h1>User Registration</h1>
+                <form id = "mainForm" action="https://httpbin.org/post" method="post" onsubmit="return validateForm();">
+                     <div class = "form-style">
+                       <h4>User Information (Last Name and ID are "Hidden")</h4>
+                        <fieldset>
+                       <legend> Registration </legend>
+                   
+                        <label for="fname" class="required">First Name</label>
+                        <input type="text" name="fname" id="fname" autofocus required><br>
+                        <div id="FnameError" class="Error"></div>
+             
+                        <input type="hidden" name="lname" id="lname" value="Moon"> 
+                        <input type="hidden" name="studentId" id="studentId" value="136103165">
+                        
+                        <label for="password" class="required">Password</label>
+                        <input type="password" name="password" id="password" placeholder="must be 8 characters long " required><br>
+                        <div id="PasswordError" class="Error"></div>
+             
+                        <label for="repassword" class="required">RE Password</label>
+                        <input type="password" name="repassword" id ="repassword" required><br>
+                        <div id="RePasswordError" class="Error"></div>
+             
+                        <label for="phone" class="required">Telephone</label>
+                        <input type="tel" name="phone" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-4567-9012" required><br>
+                        
+                        <label for="email" class="required">Email</label>
+                        <input type="email" name="email" id="email" required><br>
+             
+                        <label for="street" class="required">Street</label>
+                        <input type="text" name="street" id="street" required><br>
+                        <div id="StreetError" class="Error"></div>
+             
+                        <label for="address" class="required">Address</label>
+                        <input type="text" name="address" id="address" required><br>
+             
+                        <label for="city" class="required">City</label>
+                        <input type="text" name="city" id ="city" required><br>
+                          
+                        <label for="zip" class="required">Postal</label>
+                        <input type="text" name="zip" id ="zip" required placeholder="A1B2C3"><br>
+                        <div id="ZipError" class="Error"></div>
+             
+                        <label class="required" for="province">Province</label>
+                        <select name="province" id="province" size=1>
+                                 <option value="AB">Alberta</option>
+                                 <option value="BC">British Columbia</option>
+                                 <option value="MB">Manitoba</option>
+                                 <option value="NB">New Brunswick</option>
+                                 <option value="NL">Newfoundland and Labrador</option>
+                                 <option value="NS">Nova Scotia</option>
+                                 <option value="ON" selected>Ontario</option>
+                                 <option value="PE">Prince Edward Island</option>
+                                 <option value="QC">Quebec</option>
+                                 <option value="SK">Saskatchewan</option>
+                                 <option value="NT">Northwest Territories</option>
+                                 <option value="NU">Nunavut</option>
+                                 <option value="YT">Yukon</option>
+                         </select> <br>
+                         
+                         
+             
+                         </fieldset>
+                 
+                         <!-- buttons -->
+                        <div id = "formButtons">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                        </div>
+                    
+                     </form>
+             
+        </section>
+        <footer>
+            <div class="center">
+                &copy; 2017 Bokyung Moon
+            </div>
+        </footer>
+    </body>
+</html>
+
+

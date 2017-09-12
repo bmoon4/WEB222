@@ -1,0 +1,172 @@
+﻿/* Place all of your CSS Code in this file */
+
+/*********************************************************************************
+* WEB222 – Assignment #4a
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Bokyung Moon 	Student ID: 136103165 	Date: 2017-07-18 
+*********************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+html{
+    background-color:#F8F8FF;
+}
+
+body {
+    margin:0;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    font-family:Tahoma, sans-serif;
+    font-size:11pt;
+    background: #7E93A1;
+    color: #333;
+}
+
+nav {
+    height:40px;
+    background:#136485;
+    border: #000;
+    margin-bottom:20px;
+}
+
+nav ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type: none;
+    margin:0px 0px 0px -12px;
+    padding:0px;
+    
+}
+
+nav ul li {
+    float:left;
+}
+
+nav ul li a {
+    padding: 10px 12px 13px 12px;
+    display: block;
+    line-height: 40px;
+    font: 95% Tahoma, sans-serif;
+    color: #ddd;
+    text-decoration: none;
+}
+
+nav ul li span {
+    padding: 10px 3px 13px 3px;
+    display: block;
+    line-height:40px;
+    font: 95% Tahoma, sans-serif;
+    font-weight:bold;
+    color: #ddd;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    cursor:pointer;
+}
+header {
+    height:120px;
+	padding-top:5px;
+	padding-bottom:10px;
+	margin-bottom:0px;
+    background: #0A4B47; 
+    
+}
+
+.app-title{
+    font-family:'Pacifico', cursive;
+    font-size:50px;
+    color: #E6E6FA;
+}
+
+footer {
+    height:30px;
+    width:100%;
+    background-color:#0A4B47;  
+    color: #E6E6FA;
+    text-align:left;
+    font-size:95%;
+    padding-top:15px;
+	vertical-align:middle; 
+}
+
+form{
+    font-family: Tahoma, sans-serif;
+    width:720px;
+    overflow: auto;
+}
+input,select {
+    width: 200px;
+    margin-left:20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+.main {
+    min-height:460px;
+}
+
+.Error{
+    text-align: center;
+    color:maroon;
+}
+.center{
+	max-width:960px;
+	margin:0 auto;
+	padding-left:20px;
+	padding-right:20px;
+    padding-bottom:20px;
+}
+
+.main-table-container{
+    max-height:600px;
+    margin:0px;
+    overflow-y:scroll;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.main-table, .main-table-top{
+    border-collapse: collapse;
+    background-color: white;
+    width:100%;
+    font-size:14px;
+    font-family: 'Zilla Slab', Arial, serif;
+    
+}
+.main-table-top th{
+    background-color: #0A4B47;
+    color:white;
+    border:1px solid #0A4B47;
+    padding:10px;
+}
+
+.main-table td {
+    font-size: 14px;
+    padding:5px 5px 0px;
+    color:#0A4B47;
+    border:1px solid grey;
+}
+.main-table p span {
+    font-size: 14px;
+    font-weight:bold;
+    color:#0A4B47;
+    
+}
+
+.main-table td:first-of-type, .main-table-top th:first-of-type{
+    width:120px;   
+}
